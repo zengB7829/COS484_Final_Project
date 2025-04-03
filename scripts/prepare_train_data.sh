@@ -15,6 +15,10 @@ echo "Downloading LIMA dataset..."
 wget --header="Authorization: Bearer $HF_TOKEN" -P data/raw_train/lima/ https://huggingface.co/datasets/GAIR/lima/raw/main/train.jsonl
 
 echo "Processing datasets..."
-python open_instruct/reformat_datasets.py --raw_data_dir data/raw_train/ --output_dir data/processed/
+python open_instruct/reformat_datasets.py \
+  --raw_data_dir data/raw_train/ \
+  --output_dir data/processed/ \
+  --dataset lima stanford_alpaca
+
 
 # Now download and process datasets specific to this repository.
