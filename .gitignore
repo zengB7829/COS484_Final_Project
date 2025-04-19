@@ -142,3 +142,4 @@ myenv/
 
 #data
 data/
+!data/processed/
