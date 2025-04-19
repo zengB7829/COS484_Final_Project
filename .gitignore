@@ -141,5 +141,6 @@ slurm*
 myenv/
 
 #data
-data/
 !data/processed/
+#data/
+
