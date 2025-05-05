@@ -5,6 +5,8 @@ data_old/*
 output/
 beaker_configs/auto_created
 
+
+data/eval/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
